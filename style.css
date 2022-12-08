@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
@@ -49,6 +49,7 @@ li a:hover {
       hsl(136, 65%, 51%),
       hsl(192, 70%, 51%));
   border-bottom: 0.2em solid transparent;
+  border-image-slice: 1;
 }
 
 .request {
@@ -230,8 +231,80 @@ li a:hover {
   color: hsl(233, 26%, 24%);
 }
 
+#container .button:hover .top {
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+
+}
+
 #writing {
   line-height: 1.8vh;
   color: hsl(233, 8%, 62%);
   font-size: 1.8vh;
+}
+
+/* Footer */
+
+footer {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233, 26%, 24%);
+}
+
+.footer-container {
+  width: 80%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-column-1 {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-column-2 {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 50px;
+}
+
+.footer-column-2>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-column-2>div>div {
+  color: white;
+}
+
+.footer-column-3 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.copyright {
+  color: hsl(233, 8%, 62%);
+  ;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons>div {
+  min-width: 50px;
 }
