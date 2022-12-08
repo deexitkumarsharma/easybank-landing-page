@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  height: 100vh;
+}
+
+/* Nav Bar */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  background-color: hsl(0, 0%, 100%);
+  border: black solid 2px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  float: left;
+  padding: 0 10px 0 10px;
+  color: hsl(233, 8%, 62%);
+}
+
+.request {
+  font-size: 18px;
+  color: hsl(0, 0%, 98%);
+  width: 9em;
+  height: 2.5em;
+  border: none;
+  border-radius: 20px;
+}
